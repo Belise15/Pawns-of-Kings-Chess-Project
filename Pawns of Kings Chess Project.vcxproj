@@ -143,6 +143,13 @@
       <DependentUpon>mainMenuForm.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MainMenuPhoto.png.avif" />
+    <None Include="x64\Debug\MainMenuPhoto.png.avif" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

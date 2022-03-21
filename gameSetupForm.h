@@ -1,5 +1,4 @@
 #pragma once
-#include "mainMenuForm.h"
 
 namespace PawnsofKingsChessProject {
 
@@ -44,7 +43,8 @@ namespace PawnsofKingsChessProject {
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Button^ returnBtn;
+
 
 	private:
 		/// <summary>
@@ -67,7 +67,7 @@ namespace PawnsofKingsChessProject {
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->returnBtn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -76,7 +76,7 @@ namespace PawnsofKingsChessProject {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Lucida Console", 10.125F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->Location = System::Drawing::Point(563, 46);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(193, 61);
 			this->button1->TabIndex = 0;
@@ -88,7 +88,7 @@ namespace PawnsofKingsChessProject {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Lucida Console", 10.125F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->Location = System::Drawing::Point(198, 46);
-			this->button2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button2->Margin = System::Windows::Forms::Padding(2);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(193, 61);
 			this->button2->TabIndex = 1;
@@ -100,7 +100,7 @@ namespace PawnsofKingsChessProject {
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Lucida Console", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox1->Location = System::Drawing::Point(198, 249);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(194, 31);
 			this->textBox1->TabIndex = 2;
@@ -111,7 +111,7 @@ namespace PawnsofKingsChessProject {
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Lucida Console", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox2->Location = System::Drawing::Point(563, 249);
-			this->textBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox2->Margin = System::Windows::Forms::Padding(2);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(194, 31);
 			this->textBox2->TabIndex = 3;
@@ -121,7 +121,7 @@ namespace PawnsofKingsChessProject {
 			this->button3->Font = (gcnew System::Drawing::Font(L"Lucida Console", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button3->Location = System::Drawing::Point(198, 325);
-			this->button3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button3->Margin = System::Windows::Forms::Padding(2);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(193, 61);
 			this->button3->TabIndex = 4;
@@ -134,7 +134,7 @@ namespace PawnsofKingsChessProject {
 			this->button4->Font = (gcnew System::Drawing::Font(L"Lucida Console", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button4->Location = System::Drawing::Point(563, 325);
-			this->button4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button4->Margin = System::Windows::Forms::Padding(2);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(193, 61);
 			this->button4->TabIndex = 5;
@@ -166,24 +166,23 @@ namespace PawnsofKingsChessProject {
 			this->label2->TabIndex = 7;
 			this->label2->Text = L"Player 2 Name:";
 			// 
-			// button5
+			// returnBtn
 			// 
-			this->button5->Anchor = System::Windows::Forms::AnchorStyles::Bottom;
-			this->button5->Location = System::Drawing::Point(381, 443);
-			this->button5->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(193, 61);
-			this->button5->TabIndex = 8;
-			this->button5->Text = L"Return";
-			this->button5->UseVisualStyleBackColor = true;
-			this->button5->Click += gcnew System::EventHandler(this, &gameSetupForm::button5_Click);
+			this->returnBtn->Anchor = System::Windows::Forms::AnchorStyles::Bottom;
+			this->returnBtn->Location = System::Drawing::Point(381, 443);
+			this->returnBtn->Margin = System::Windows::Forms::Padding(2);
+			this->returnBtn->Name = L"returnBtn";
+			this->returnBtn->Size = System::Drawing::Size(193, 61);
+			this->returnBtn->TabIndex = 8;
+			this->returnBtn->Text = L"Return";
+			this->returnBtn->UseVisualStyleBackColor = true;
 			// 
 			// gameSetupForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(15, 24);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(937, 544);
-			this->Controls->Add(this->button5);
+			this->Controls->Add(this->returnBtn);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button4);
@@ -201,11 +200,5 @@ namespace PawnsofKingsChessProject {
 
 		}
 #pragma endregion
-	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) 
-	{
-		mainMenuForm^ f = gcnew mainMenuForm;
-		f->ShowDialog();
-		this->Hide();
-	}
 };
 }

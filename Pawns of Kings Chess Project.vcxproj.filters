@@ -36,4 +36,13 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="x64\Debug\MainMenuPhoto.png.avif" />
+    <None Include="MainMenuPhoto.png.avif" />
+  </ItemGroup>
 </Project>
