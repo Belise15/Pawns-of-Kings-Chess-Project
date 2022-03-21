@@ -120,14 +120,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="gameSetupForm.cpp" />
     <ClCompile Include="mainMenuForm.cpp" />
+    <ClCompile Include="topGamesForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="gameSetupForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="mainMenuForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="topGamesForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="gameSetupForm.resx">
+      <DependentUpon>gameSetupForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainMenuForm.resx">
       <DependentUpon>mainMenuForm.h</DependentUpon>
     </EmbeddedResource>

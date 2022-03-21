@@ -18,9 +18,21 @@
     <ClCompile Include="mainMenuForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="gameSetupForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="topGamesForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mainMenuForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameSetupForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="topGamesForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
